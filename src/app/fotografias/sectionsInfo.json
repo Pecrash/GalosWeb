@@ -1,0 +1,436 @@
+{
+	"eventos": [
+		{
+			"src": "/Images/eventos/fotoEventos23.jpg",
+			"alt": "",
+			"width": 280
+		},
+		{
+			"src": "/Images/eventos/fotoEventos01.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos02.jpg",
+			"alt": "",
+			"width": 507
+		},
+		{
+			"src": "/Images/eventos/fotoEventos03.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos04.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos05.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos06.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos07.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos08.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos09.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos10.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos11.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos12.jpg",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoEventos14.jpg",
+			"alt": "",
+			"width": 267
+		}
+	],
+
+	"eventos2": [
+		{
+			"src": "/Images/eventos/fotoEventos15.jpg",
+			"alt": "",
+			"width": 273
+		},
+		{
+			"src": "/Images/eventos/fotoEventos16.jpg",
+			"alt": "",
+			"width": 458
+		},
+		{
+			"src": "/Images/eventos/fotoEventos17.jpg",
+			"alt": "",
+			"width": 501
+		},
+		{
+			"src": "/Images/eventos/fotoEventos18.jpg",
+			"alt": "",
+			"width": 548
+		},
+		{
+			"src": "/Images/eventos/fotoEventos19.jpg",
+			"alt": "",
+			"width": 305
+		},
+		{
+			"src": "/Images/eventos/fotoEventos20.jpg",
+			"alt": "",
+			"width": 341
+		},
+		{
+			"src": "/Images/eventos/fotoEventos21.jpg",
+			"alt": "",
+			"width": 282
+		},
+		{
+			"src": "/Images/eventos/fotoEventos22.jpg",
+			"alt": "",
+			"width": 267
+		},
+		{
+			"src": "/Images/eventos/fotoOtros04.png",
+			"alt": "",
+			"width": 599
+		},
+		{
+			"src": "/Images/eventos/fotoOtros05.jpg",
+			"alt": "",
+			"width": 712
+		},
+		{
+			"src": "/Images/eventos/fotoOtros06.jpg",
+			"alt": "",
+			"width": 712
+		},
+		{
+			"src": "/Images/eventos/fotoOtros07.jpg",
+			"alt": "",
+			"width": 600
+		},
+		{
+			"src": "/Images/eventos/fotoOtros08.jpg",
+			"alt": "",
+			"width": 600
+		},
+		{
+			"src": "/Images/eventos/fotoEventos13.jpg",
+			"alt": "",
+			"width": 599
+		}
+	],
+
+	"moda": [
+		{
+			"src": "/Images/moda/fotoModa01.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa04.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa05.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa06.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa07.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa08.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa09.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa10.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa11.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa12.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa13.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa34.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa26.jpg",
+			"alt": ""
+		}
+	],
+
+	"moda2": [
+		{
+			"src": "/Images/moda/fotoModa14.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa16.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa17.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa19.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa20.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa21.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa22.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa23.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa24.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa25.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa27.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa28.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa29.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa30.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/moda/fotoModa31.jpg",
+			"alt": ""
+		}
+	],
+
+	"retrato": [
+		{
+			"src": "/Images/retrato/fotoRetrato02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/retrato/fotoRetrato03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/retrato/fotoRetrato04.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/retrato/fotoRetrato01.jpg",
+			"alt": ""
+		}
+	],
+
+	"naturaleza": [
+		{
+			"src": "/Images/naturaleza/fotoNaturaleza01.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/fotoNaturaleza02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/fotoNaturaleza03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/fotoNaturaleza04.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/Macro01.jpg",
+			"alt": ""
+		}
+	],
+
+	"naturaleza2": [
+		{
+			"src": "/Images/naturaleza/Macro02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/Macro03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/Macro04.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/Macro05.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/naturaleza/Macro06.jpg",
+			"alt": ""
+		}
+	],
+
+	"alimentos": [
+		{
+			"src": "/Images/alimentos/fotoAlimentos01.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/alimentos/fotoAlimentos02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/alimentos/fotoAlimentos03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/alimentos/fotoAlimentos04.jpg",
+			"alt": ""
+		}
+	],
+
+	"productos": [
+		{
+			"src": "/Images/productos/fotoProductos02.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos01.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos03.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos04.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos05.jpg",
+			"alt": ""
+		}
+	],
+
+	"productos2": [
+		{
+			"src": "/Images/productos/fotoProductos06.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos07.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoProductos08.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoOtros01.jpg",
+			"alt": ""
+		},
+		{
+			"src": "/Images/productos/fotoOtros02.jpg",
+			"alt": ""
+		}
+	],
+
+	"text": [
+		{
+			"title": "Eventos",
+			"info": "Section Productos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae labore nobis numquam possimus, eos vel dicta nam voluptatem expedita neque dolorem inventore maxime placeat dolores doloremque.",
+			"infoItem1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus",
+			"infoItem2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus"
+		},
+		{
+			"title": "Eventos",
+			"info": "Section Eventos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae labore nobis numquam possimus, eos vel dicta nam voluptatem expedita neque",
+			"infoItem1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus",
+			"infoItem2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus"
+		},
+		{
+			"title": "Moda",
+			"info": "Section Moda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae labore nobis numquam possimus, eos vel dicta nam voluptatem expedita neque",
+			"infoItem1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus",
+			"infoItem2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus"
+		},
+		{
+			"title": "Naturaleza",
+			"info": "Section Naturaleza Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae labore nobis numquam possimus, eos vel dicta nam voluptatem expedita neque",
+			"infoItem1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus",
+			"infoItem2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus"
+		},
+		{
+			"title": "Productos",
+			"info": "Section Productos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae labore nobis numquam possimus, eos vel dicta nam voluptatem expedita neque",
+			"infoItem1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus",
+			"infoItem2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet vel accusamus"
+		}
+	]
+}
