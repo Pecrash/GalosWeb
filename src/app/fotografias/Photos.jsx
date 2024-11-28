@@ -19,7 +19,7 @@ export default function Photos({
 		slider2 = useRef();
 
 	useGSAP(() => {
-		gsap.to(slider.current, {
+		/* gsap.to(slider.current, {
 			xPercent: -100,
 			repeat: -1,
 			duration: duration,
@@ -30,7 +30,7 @@ export default function Photos({
 			repeat: -1,
 			duration: duration,
 			ease: "none",
-		});
+		}); */
 	});
 
 	return (
@@ -42,7 +42,9 @@ export default function Photos({
 							<figure className={styles.photoSlider__img} key={image.src}>
 								<Image
 									src={image.src}
-									fill={true}
+									alt={image.alt}
+									fill
+									sizes="(min-width: 1200px) 40vw, (min-width: 768px) 70vw, (min-width: 360px) 70vw"
 									style={{ objectFit: "cover", objectPosition: "40% 10%" }}
 								/>
 							</figure>
@@ -55,8 +57,10 @@ export default function Photos({
 							<figure className={styles.photoSlider__img} key={image.src}>
 								<Image
 									src={image.src}
-									fill={true}
-									style={{ objectFit: "cover", objectPosition: "0% 10%" }}
+									alt={image.alt}
+									fill
+									sizes="(min-width: 1200px) 40vw, (min-width: 768px) 70vw, (min-width: 360px) 70vw"
+									style={{ objectFit: "cover", objectPosition: "40% 10%" }}
 								/>
 							</figure>
 						);
@@ -71,7 +75,9 @@ export default function Photos({
 							<figure className={styles.photoSlider__img} key={image.src}>
 								<Image
 									src={image.src}
-									fill={true}
+									alt={image.alt}
+									fill
+									sizes="(min-width: 1200px) 40vw, (min-width: 768px) 70vw, (min-width: 360px) 70vw"
 									style={{ objectFit: "cover", objectPosition: "40% 10%" }}
 								/>
 							</figure>
@@ -84,8 +90,10 @@ export default function Photos({
 							<figure className={styles.photoSlider__img} key={image.src}>
 								<Image
 									src={image.src}
-									fill={true}
-									style={{ objectFit: "cover", objectPosition: "0% 10%" }}
+									alt={image.alt}
+									fill
+									sizes="(min-width: 1200px) 40vw, (min-width: 768px) 70vw, (min-width: 360px) 70vw"
+									style={{ objectFit: "cover", objectPosition: "40% 10%" }}
 								/>
 							</figure>
 						);

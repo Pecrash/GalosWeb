@@ -3,271 +3,299 @@
 		{
 			"src": "/Images/eventos/fotoEventos23.jpg",
 			"alt": "",
-			"width": 280
-		},
-		{
-			"src": "/Images/eventos/fotoEventos01.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos02.jpg",
-			"alt": "",
-			"width": 507
-		},
-		{
-			"src": "/Images/eventos/fotoEventos03.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos04.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos05.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos06.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos07.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos08.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos09.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos10.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos11.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos12.jpg",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoEventos14.jpg",
-			"alt": "",
-			"width": 267
-		}
-	],
-
-	"eventos2": [
-		{
-			"src": "/Images/eventos/fotoEventos15.jpg",
-			"alt": "",
-			"width": 273
-		},
-		{
-			"src": "/Images/eventos/fotoEventos16.jpg",
-			"alt": "",
-			"width": 458
-		},
-		{
-			"src": "/Images/eventos/fotoEventos17.jpg",
-			"alt": "",
-			"width": 501
-		},
-		{
-			"src": "/Images/eventos/fotoEventos18.jpg",
-			"alt": "",
-			"width": 548
-		},
-		{
-			"src": "/Images/eventos/fotoEventos19.jpg",
-			"alt": "",
-			"width": 305
-		},
-		{
-			"src": "/Images/eventos/fotoEventos20.jpg",
-			"alt": "",
-			"width": 341
-		},
-		{
-			"src": "/Images/eventos/fotoEventos21.jpg",
-			"alt": "",
-			"width": 282
-		},
-		{
-			"src": "/Images/eventos/fotoEventos22.jpg",
-			"alt": "",
-			"width": 267
-		},
-		{
-			"src": "/Images/eventos/fotoOtros04.png",
-			"alt": "",
-			"width": 599
-		},
-		{
-			"src": "/Images/eventos/fotoOtros05.jpg",
-			"alt": "",
-			"width": 712
-		},
-		{
-			"src": "/Images/eventos/fotoOtros06.jpg",
-			"alt": "",
-			"width": 712
-		},
-		{
-			"src": "/Images/eventos/fotoOtros07.jpg",
-			"alt": "",
-			"width": 600
-		},
-		{
-			"src": "/Images/eventos/fotoOtros08.jpg",
-			"alt": "",
-			"width": 600
+			"width": 300,
+			"orientacion": "horizontal",
+			"id":0,
+			"span": 2
 		},
 		{
 			"src": "/Images/eventos/fotoEventos13.jpg",
 			"alt": "",
-			"width": 599
+			"width": 150,
+			"id":1,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos01.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":2,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos02.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":3,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos03.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "vertical",
+			"id":4,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos04.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "vertical",
+			"id":5,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos05.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":6,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos06.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":7,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos07.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":8,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos08.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "vertical",
+			"id":9,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos09.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":10,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos10.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":11,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos11.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "vertical",
+			"id":12,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos12.jpg",
+			"alt": "",
+			"width": 150,
+			"orientacion": "horizontal",
+			"id":13,
+			"span": 0
+		},
+		{
+			"src": "/Images/eventos/fotoEventos14.jpg",
+			"alt": "",
+			"width": 300,
+			"orientacion": "vertical",
+			"id":14,
+			"span": 2
+		},
+		{
+			"src": "/Images/eventos/fotoEventos15.jpg",
+			"alt": "",
+			"width": 300,
+			"id":15,
+			"span": 2
 		}
 	],
 
 	"moda": [
 		{
 			"src": "/Images/moda/fotoModa01.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa02.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa03.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa04.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 0
 		},
 		{
 			"src": "/Images/moda/fotoModa05.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa06.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa07.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa08.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa09.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa10.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa11.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa12.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		},
 		{
 			"src": "/Images/moda/fotoModa13.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 0
 		},
 		{
 			"src": "/Images/moda/fotoModa34.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 0
 		},
 		{
 			"src": "/Images/moda/fotoModa26.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100,
+			"span": 2
 		}
 	],
 
 	"moda2": [
 		{
 			"src": "/Images/moda/fotoModa14.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa16.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa17.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa19.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa20.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa21.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa22.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa23.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa24.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa25.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa27.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa28.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa29.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa30.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		},
 		{
 			"src": "/Images/moda/fotoModa31.jpg",
-			"alt": ""
+			"alt": "",
+			"width": 100
 		}
 	],
 

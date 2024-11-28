@@ -28,15 +28,15 @@ export default function Details({section}) {
 
 				estado
 					? details
-							.to(".titleClose", { opacity: 0, duration: 0.3 })
-							.to(dContainer.current, { x: -width + 50, duration: 0.5 })
-							.to(".detailsContainer", { opacity: 1, duration: 0.3 })
-							.to(".closeBtn", { rotate: 0, duration: 0.3 }, "<")
+							.to(".titleClose", { opacity: 0, duration: 0.2 })
+							.to(dContainer.current, { x: -width + 50, duration: 0.4 })
+							.to(".detailsContainer", { opacity: 1, duration: 0.2 })
+							.to(".closeBtn", { rotate: 0, duration: 0.2 }, "<")
 					: details
-							.to(".detailsContainer", { opacity: 0, duration: 0.3 })
-							.to(dContainer.current, { x: 0, duration: 0.5 })
+							.to(".detailsContainer", { opacity: 0, duration: 0.2 })
+							.to(dContainer.current, { x: 0, duration: 0.4 })
 							.to(".titleClose", { opacity: 1, duration: 0.4 })
-							.to(".closeBtn", { rotate: 180, duration: 0.3 }, "<");
+							.to(".closeBtn", { rotate: 180, duration: 0.2 }, "<");
 				open = !estado;
 
 				return details;

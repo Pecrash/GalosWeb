@@ -31,7 +31,7 @@ export default function Fotografias() {
 			let clamp = gsap.utils.clamp(0, sections.length - 1);
 
 			const tl = gsap.timeline({
-				defaults: { duration: 0.8 },
+				defaults: { duration: 0.6 },
 				onComplete: () => (animating = false),
 			});
 
@@ -43,33 +43,16 @@ export default function Fotografias() {
 					index < 4
 						? tl
 								.set(sections[index], { display: "flex" })
-								.to(sections[index], { xPercent: -100 })
+								.to(sections[index], { opacity: 1 })
 								.set(sections[currentIndex], { display: "none" })
 						: tl
 								.set(sections[index], { display: "flex" })
-								.to(sections[index], { xPercent: -100 });
+								.to(sections[index], { opacity: 1 });
 				} else if (value === 0) {
 					tl.set(sections[index], { display: "flex" })
-						.to(sections[currentIndex], { xPercent: 0 })
+						.to(sections[currentIndex], { opacity: 0 })
 						.set(sections[currentIndex], { display: "none" });
 				}
-
-				/* if (value === 1 && index === 4) {
-					tl.set(sections[index], { display: "flex" })
-						.to(sections[index], { xPercent: -100 })
-				}
-
-				if (value === 1 && index < 4) {
-					tl.set(sections[index], { display: "flex" })
-						.to(sections[index], { xPercent: -100 })
-						.set(sections[currentIndex], { display: "none" });
-				}
-
-				if (value === 0 ) {
-					tl.set(sections[index], { display: "flex" })
-						.to(sections[currentIndex], { xPercent: 0 })
-						.set(sections[currentIndex], { display: "none" });
-				} */
 
 				setSection(index);
 				currentIndex = index;
