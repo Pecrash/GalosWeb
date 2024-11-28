@@ -19,7 +19,7 @@ export default function Home() {
 	let type = useRef();
 
 	// esta variable contiene las referencias de la lista de servicios
-	let servicesRef = [];
+	let servicesRef = useRef();
 	let anim;
 
 	let services = [
@@ -54,9 +54,6 @@ export default function Home() {
 		[active, setActive] = useState(0);
 
 	useEffect(() => {
-		// se actualizan las referencias para poder acceder a ellas
-		servicesRef = gsap.utils.toArray(".service");
-
 		// LOTTIE ANIMATION
 
 		anim = Lottie.loadAnimation({
@@ -92,12 +89,14 @@ export default function Home() {
 
 	useGSAP(
 		(context, contextSafe) => {
+			// se actualizan las referencias para poder acceder a ellas
+			servicesRef.current = gsap.utils.toArray(".service");
 			// SECTIONS transition
 			const sections = gsap.utils.toArray(".section");
 			let clamp = gsap.utils.clamp(0, sections.length - 1);
 			let currentIndex = 0;
 			// se da el tamaño inicial al primer servicio
-			gsap.set(servicesRef[0], { flex: 5 });
+			gsap.set(servicesRef.current[0], { flex: 5 });
 			const tl = gsap.timeline({
 				defaults: { duration: 0.6 },
 				onComplete: () => (animating = false),
@@ -136,13 +135,13 @@ export default function Home() {
 
 	// SERVICES OPEN ANIMATION
 	const servicesClick = contextSafe((index) => {
-		servicesRef.forEach((item, itemIndex) => {
+		servicesRef.current.forEach((item, itemIndex) => {
 			itemIndex === index
 				? gsap.set(item, { flex: "5", duration: 5 })
 				: gsap.set(item, { flex: "1" });
 		});
 
-		console.log("este es el index: " + servicesRef);
+		console.log("este es el index: " + servicesRef.current);
 	});
 
 	// VALUES SECTION ANIMATION
@@ -159,10 +158,10 @@ export default function Home() {
 			  }),
 			  mm.add("(min-width: 1200px)", () => {
 					valuesSection
-						.to(".misionExtra", {opacity: 0},)
+						.to(".misionExtra", { opacity: 0 })
 						.to(".mision", { width: "calc(100vw - 6.8125rem)" })
-						.to(".misionDesc", {opacity: 1, duration: 0.3})
-						.to(".misionTitle", {opacity: 1}, "<")
+						.to(".misionDesc", { opacity: 1, duration: 0.3 })
+						.to(".misionTitle", { opacity: 1 }, "<")
 						.to(".visionExtra", { opacity: 1 }, "<");
 			  }))
 			: (mm.add("(max-width: 820px)", () => {
@@ -172,10 +171,10 @@ export default function Home() {
 			  }),
 			  mm.add("(min-width: 1200px)", () => {
 					valuesSection
-						.to(".misionDesc", {opacity: 0, duration: 0.3})
-						.to(".misionTitle", {opacity: 0}, "<")
+						.to(".misionDesc", { opacity: 0, duration: 0.3 })
+						.to(".misionTitle", { opacity: 0 }, "<")
 						.to(".mision", { width: "6.8125rem" })
-						.to(".misionExtra", {opacity: 1}, "<")
+						.to(".misionExtra", { opacity: 1 }, "<")
 						.to(".visionExtra", { opacity: 0 }, "<");
 			  }));
 	});
