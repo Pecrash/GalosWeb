@@ -20,7 +20,7 @@ export default function Home() {
 
 	// esta variable contiene las referencias de la lista de servicios
 	let servicesRef = useRef();
-	let anim;
+	let anim = useRef();
 
 	let services = [
 		{
@@ -56,7 +56,7 @@ export default function Home() {
 	useEffect(() => {
 		// LOTTIE ANIMATION
 
-		anim = Lottie.loadAnimation({
+		anim.current = Lottie.loadAnimation({
 			container: animRef.current,
 			renderer: "svg",
 			loop: false,
@@ -64,7 +64,7 @@ export default function Home() {
 			path: "/animations/plant.json",
 		});
 
-		anim.setDirection(0);
+		anim.current.setDirection(0);
 
 		// TYPE ANIMATION
 
@@ -80,7 +80,7 @@ export default function Home() {
 		});
 
 		return () => {
-			anim.destroy();
+			anim.current.destroy();
 			typed.destroy();
 		};
 	}, []);
