@@ -1,6 +1,6 @@
 "use client";
 
-import imagesRoutes from "../fotografias/sectionsInfo.json";
+import imagesRoutes from "./sectionsInfo.json";
 import Image from "next/image";
 import styles from "@/scss/app.module.scss";
 import { gsap } from "gsap";
