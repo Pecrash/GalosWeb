@@ -117,7 +117,7 @@ export default function Website(params) {
 				<section className={`${styles.websitesContainer__one} section`}>
 					{imageUrl.map((item) => {
 						return (
-							<figure className={`${styles.websitesContainer__one_image} image`}>
+							<figure key={item.url} className={`${styles.websitesContainer__one_image} image`}>
 								<Image fill src={item.url} />
 							</figure>
 						);
