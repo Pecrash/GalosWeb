@@ -53,43 +53,6 @@ export default function Fotografias2(params) {
 		);
 	};
 
-	/* useEffect(() => {
-		valor = carousel.current.childNodes.length / 2;
-
-		gsap.to(".testCont", {
-			duration: 2,
-			scrollTo: { x: `#E${valor}`, offsetX: offsetX },
-			ease: "power3",
-		});
-
-		console.log(valor)
-	}, []); */
-
-	/* const moveItem = (value) => {
-		let firstItem = carousel.current.firstElementChild;
-		let lastItem = carousel.current.lastElementChild;
-
-		value === "left"
-			? carousel.current.insertBefore(lastItem, firstItem)
-			: carousel.current.appendChild(firstItem);
-
-		console.log("Item" + lastItem);
-	}; */
-	// SE PUEDE USAR LA UTILIDAD DE GSAP PARA LIMITAR LOS VALORES
-	/* const scrollTo = contextSafe((value) => {
-		valor = value === "left" ? valor - 1 : valor + 1;
-		valor = clamp(valor);
-
-		gsap.to(".testCont", {
-			duration: 2,
-			scrollTo: { x: `#E${valor}`, offsetX: offsetX },
-			ease: "power3",
-		});
-		console.log("valor:" + imageWidth);
-
-		moveItem(value);
-	}); */
-
 	// USAR EL SCROLL Y TOUCH PARA MOVER LAS IMÁGENES, SERÁ FÁCIL CON OBSERVER DE GSAP
 	return (
 		<>

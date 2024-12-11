@@ -91,17 +91,20 @@ export default function Home() {
 		(context, contextSafe) => {
 			// se actualizan las referencias para poder acceder a ellas
 			servicesRef.current = gsap.utils.toArray(".service");
-			// SECTIONS transition
-			const sections = gsap.utils.toArray(".section");
-			let clamp = gsap.utils.clamp(0, sections.length - 1);
-			let currentIndex = 0;
-			// se da el tamaño inicial al primer servicio
+
+			// se da el tamaño inicial al primer servicio de la sección de servicios
 			gsap.set(servicesRef.current[0], { flex: 5 });
 			const tl = gsap.timeline({
 				defaults: { duration: 0.6 },
 				onComplete: () => (animating = false),
 			});
 
+			// Transición de cada una de las secciones al realizar scroll
+			const sections = gsap.utils.toArray(".section");
+			let clamp = gsap.utils.clamp(0, sections.length - 1);
+			let currentIndex = 0;
+
+			// value da la dirección del scroll
 			const next = (index, value) => {
 				index = clamp(index);
 				animating = true;

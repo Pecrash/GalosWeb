@@ -79,11 +79,11 @@ export const Header = () => {
 						Videos
 					</Link>
 					<Link
-						href={"/"}
+						href={"/website"}
 						onClick={openMenu}
 						scroll={false}
 						className={`${styles.menu__list_link}`}
-						style={isActive("/desarrollo") ? { color: "#DDB26D" } : {}}
+						style={isActive("/website") ? { color: "#DDB26D" } : {}}
 					>
 						Desarrollo Web
 					</Link>

@@ -1,0 +1,97 @@
+@use "../abstracts" as *;
+
+@include media-up(phone) {
+    .websitesContainer {
+        background-color: $backgroundColor;
+        width: 100%;
+        height: 100svh;
+
+        &__one {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100svh;
+            border: 2px solid blue;
+            opacity: 1;
+
+            &_title {
+                font-size: 1.75em;
+                width: 80%;
+                text-align: center;
+                margin-top: 100%;
+            }
+
+            &_image {
+                position: absolute;
+                width: 100%;
+                height: 35%;
+                filter: brightness(0.6);
+                opacity: 0;
+            }
+
+            &_span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &_p {
+                margin-top: 6.25rem;
+                font-size: 1.3em;
+            }
+
+            &_arrow {
+                position: relative;
+                width: 60px;
+            }
+        }
+
+        &__two {
+            position: absolute;
+            border: 2px solid yellow;
+            width: 100%;
+            height: 100svh;
+            background-color: $backgroundColor;
+            opacity: 0;
+            padding-top: 5.625rem;
+
+            &_title {
+                width: 75%;
+                margin-left: 2.1875rem;
+            }
+
+            &_p {
+                width: 85%;
+                margin-left: 2.1875rem;
+                font-size: 1.375em;
+                margin-top: .9375rem;
+            }
+
+            /* &_animation {
+
+            } */
+        }
+
+        &__three {
+            position: absolute;
+            border: 2px solid purple;
+            width: 100%;
+            height: 100svh;
+            background-color: $backgroundColor;
+            opacity: 0
+        }
+
+        &__four {
+            position: absolute;
+            border: 2px solid lightblue;
+            width: 100%;
+            height: 100svh;
+            background-color: $backgroundColor;
+            opacity: 0
+        }
+    }
+
+
+}
