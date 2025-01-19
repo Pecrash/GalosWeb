@@ -11,6 +11,13 @@
 		z-index: 6;
 	}
 
+	.photoTitle {
+		font-size: 2.75em;
+		color: $goldenColor;
+		margin-top: 6rem;
+		padding-left: 1.875rem;
+	}
+
 	.photoContainer {
 		width: 100vw;
 		/* height: 100vh; */
@@ -21,8 +28,8 @@
 		gap: 5px;
 		padding: 0 6px 6px 6px;
 
-		&__carousel {
-			margin-top: 100px;
+		&__section {
+			margin-top: 30px;
 			display: grid;
 			width: 100%;
 			gap: 6px;
@@ -72,7 +79,7 @@
 
 @include media-up(tablet) {
 	.photoContainer {
-		&__carousel {
+		&__section {
 			&1 {
 				grid-template-rows: repeat(10, 148 * 1.7px);
 			}
@@ -85,9 +92,9 @@
 
 @include media-up(desktop) {
 	.photoContainer {
-		&__carousel {
-			/* grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(12, 148 * 2.2px); */
+		align-items: center;
+		&__section {
+			width: calc(100% - 20px);
 
 			&1 {
 				grid-template-columns: repeat(3, 1fr);

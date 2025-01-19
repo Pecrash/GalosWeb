@@ -23,16 +23,16 @@ export default function Fotografias2(params) {
 	const PhotoSet = ({ images, className }) => {
 		return (
 			<>
-			<h2>TITLE</h2>
+				<h2 className={`${styles.photoTitle}`}>TITLE</h2>
 				<div
 					ref={carousel}
-					className={`${styles.photoContainer__carousel} ${className} testCont`}
+					className={`${styles.photoContainer__section} ${className} testCont`}
 				>
 					{images.map((item) => {
 						return (
 							<figure
 								/* style={{height: "100vh", width: item.width}} */ id={item.id}
-								className={styles.photoContainer__carousel_figure}
+								className={styles.photoContainer__section_figure}
 								style={{ gridRow: item.span === 2 ? "span 2" : "span 1" }}
 								key={item.src}
 							>
@@ -59,11 +59,11 @@ export default function Fotografias2(params) {
 			<main className={styles.photoContainer} ref={container}>
 				<PhotoSet
 					images={imagesRoutes.eventos}
-					className={styles.photoContainer__carousel1}
+					className={styles.photoContainer__section1}
 				/>
 				<PhotoSet
 					images={imagesRoutes.moda}
-					className={styles.photoContainer__carousel2}
+					className={styles.photoContainer__section2}
 				/>
 			</main>
 		</>

@@ -4,183 +4,178 @@ import styles from "@/scss/app.module.scss";
 import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
-import Lottie from "lottie-web";
+import { ScrollToPlugin, CustomEase } from "gsap/all";
 import { useEffect, useRef } from "react";
 
-gsap.registerPlugin(useGSAP, Observer);
+gsap.registerPlugin(useGSAP, Observer, ScrollToPlugin);
 
 export default function Website(params) {
 	const arrow = useRef(),
-		phone = useRef(),
-		arrowRef = useRef(),
-		phoneRef = useRef(),
 		container = useRef(),
-		sections = useRef();
+		sections = useRef(),
+		valuesRef = useRef();
 
 	let clamp = useRef();
 	let animating;
 
-	const imageUrl = [
+	const valores = [
 		{
-			url: "/Images/web/barberShop.jpg",
+			title: "Diseños enfocados en representarte",
+			description:
+				"Es vital diseñar un sitio web que te represente correctamente y desde el primer vistazo sea evidente a quien pertenece",
+			id: 0,
 		},
 		{
-			url: "/Images/web/hotel.jpg",
+			title: "Diseños enfocados en representarte",
+			description:
+				"Es vital diseñar un sitio web que te represente correctamente y desde el primer vistazo sea evidente a quien pertenece",
+			id: 1,
 		},
 		{
-			url: "/Images/web/odontologia.jpg",
-		},
-		{
-			url: "/Images/web/orange.jpg",
+			title: "Diseños enfocados en representarte",
+			description:
+				"Es vital diseñar un sitio web que te represente correctamente y desde el primer vistazo sea evidente a quien pertenece",
+			id: 2,
 		},
 	];
 
 	useEffect(() => {
 		// LOTTIE ANIMATION
-
-		arrow.current = Lottie.loadAnimation({
-			container: arrowRef.current,
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "/animations/Scroll.json",
-		});
-
-		phone.current = Lottie.loadAnimation({
-			container: phoneRef.current,
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "/animations/responsive.json",
-		});
-
-		return () => {
-			arrow.current.destroy();
-			phone.current.destroy();
-		};
 	}, []);
 
 	useGSAP(
 		() => {
-			gsap.to(".image", {
-				opacity: 1,
-				stagger: 2,
+			// ANIMACIONES
+
+			let yValue = -180;
+
+			let tl = gsap.timeline({
 				repeat: -1,
 				repeatDelay: 2,
+				defaults: {
+					duration: 0.7,
+					ease: "power2.inOut",
+				},
 			});
 
-			// SECTIONS TRANSITION
-			const tl = gsap.timeline({
-				defaults: { duration: 0.6 },
-				onComplete: () => (animating = false),
-			});
-
-			// Transición de cada una de las secciones al realizar scroll
-			sections.current = gsap.utils.toArray(".section");
-			clamp.current = gsap.utils.clamp(0, sections.current.length - 1);
-			let currentIndex = 0;
-
-			// value da la dirección del scroll
-			const next = (index, value) => {
-				index = clamp.current(index);
-				animating = true;
-
-				value === 1
-					? tl
-							.to(sections.current[index], { opacity: 1 })
-							.set(sections.current[index], { pointerEvents: "auto" })
-					: tl
-							.to(sections.current[currentIndex], { opacity: currentIndex == 0 ? 1 : 0 })
-							.set(sections.current[currentIndex], { pointerEvents: "none" });
-
-				currentIndex = index;
-				console.log("Index: " + currentIndex);
-			};
-
-			const sectionsObserver = Observer.create({
-				target: window,
-				type: "wheel,touch",
-				onDown: () => !animating && next(currentIndex - 1, 0),
-				onUp: () => !animating && next(currentIndex + 1, 1),
-				tolerance: 10,
-				preventDefault: true,
-				wheelSpeed: -1,
-			});
+			tl.to(".value", { yPercent: -100, translateY: "-0.9375rem" })
+				.to(".value", { yPercent: -200, translateY: "-1.875rem" }, ">2")
+				.to(".value", { yPercent: -300, translateY: "-2.8125rem" }, ">2")
+				.to(".value", { yPercent: -400, translateY: "-3.75rem" }, ">2");
 		},
 		{ scope: container }
 	);
 
+	/* const { contextSafe } = useGSAP();
+
+	const servicesClick = contextSafe((index) => {
+		valuesRef.current.forEach((item, itemIndex) => {
+			itemIndex === index
+				? gsap.set(item, { flex: "3", duration: 5 })
+				: gsap.set(item, { flex: "1" });
+		});
+	}); */
+
+	const Services = () => {
+		return (
+			<>
+				<article className={`${styles.website__services_value} value`}>
+					<h3 className={`${styles.website__services_value_title}`}>
+						DISEÑO WEB RESPONSIVE
+					</h3>
+					<p className={`${styles.website__services_value_p}`}>
+						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
+						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
+						cualquier pantalla.
+					</p>
+				</article>
+				<article className={`${styles.website__services_value} value`}>
+					<h3 className={`${styles.website__services_value_title}`}>DISEÑO UI&UX</h3>
+					<p className={`${styles.website__services_value_p}`}>
+						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
+						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
+						cualquier pantalla.
+					</p>
+				</article>
+				<article className={`${styles.website__services_value} value`}>
+					<h3 className={`${styles.website__services_value_title}`}>TITULO 3</h3>
+					<p className={`${styles.website__services_value_p}`}>
+						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
+						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
+						cualquier pantalla.
+					</p>
+				</article>
+				<article className={`${styles.website__services_value} value`}>
+					<h3 className={`${styles.website__services_value_title}`}>TITULO 4</h3>
+					<p className={`${styles.website__services_value_p}`}>
+						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
+						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
+						cualquier pantalla.
+					</p>
+				</article>
+			</>
+		);
+	};
+
 	return (
 		<>
-			<main className={`${styles.websitesContainer}`} ref={container}>
-				<section className={`${styles.websitesContainer__one} section`}>
-					{imageUrl.map((item) => {
-						return (
-							<figure key={item.url} className={`${styles.websitesContainer__one_image} image`}>
-								<Image fill src={item.url} />
-							</figure>
-						);
-					})}
-					<h2 className={`${styles.websitesContainer__one_title}`}>
+			<main className={`${styles.website}`} ref={container}>
+				<section className={`${styles.website__welcome}`}>
+					<h2 className={`${styles.website__welcome_title}`}>
 						TODA GRAN MARCA DEBE TENER UN SITIO WEB A SU ALTURA
 					</h2>
-					<span className={`${styles.websitesContainer__one_span}`}>
-						<p className={`${styles.websitesContainer__one_p}`}>Conoce más</p>
-						<div
-							className={`${styles.websitesContainer__one_arrow}`}
-							ref={arrowRef}
-						></div>
-					</span>
-				</section>
-				<section className={`${styles.websitesContainer__two} section`}>
-					<h2 className={`${styles.websitesContainer__two_title}`}>
-						TU MARCA SIEMPRE PRESENTE EN CUALQUIER PANTALLA
-					</h2>
-					<div
-						className={`${styles.websitesContainer__two_animation}`}
-						ref={phoneRef}
-					></div>
-					<p className={`${styles.websitesContainer__two_p}`}>
-						Tu presencia online no debe verse limitada por el tipo de dispositivo en el
-						que te visualizan, un sitio web debe ser capaz de adaptarse fácilmente. El
-						Responsive Design es más que una tendencia, es una necesidad en el mundo
-						digital actual.{" "}
+					<p className={`${styles.website__welcome_p}`}>
+						DE LA MANO CONTIGO PODEMOS CREAR EL SITIO WEB IDEAL
 					</p>
 				</section>
-				<section className={`${styles.websitesContainer__three} section`}>
-					<h2>CONOCE ALGUNOS DE NUESTROS PROYECTOS...</h2>
-					<section>
-						<article>
-							<Image />
-							<a href=""></a>
-						</article>
-						<article>
-							<Image />
-							<a href=""></a>
-						</article>
-						<article>
-							<Image />
-							<a href=""></a>
-						</article>
+				<section className={`${styles.website__services}`}>
+					<article className={`${styles.website__services_intro}`}>
+						<h2 className={`${styles.website__services_intro_title}`}>
+							SOLUCIONES WEB A TU MEDIDA
+						</h2>
+						<p className={`${styles.website__services_intro_p}`}>
+							Un sitio web no es solo cuestión de estética; es un arte que combina la
+							esencia de una marca con las necesidades únicas de su audiencia, un espacio
+							digital donde cada color, cada palabra y cada interacción evocan confianza y
+							conexión.{" "}
+						</p>
+					</article>
+					<section className={`${styles.website__services_container} container`}>
+						<Services />
+						<Services />
 					</section>
 				</section>
-				<section className={`${styles.websitesContainer__four} section`}>
-					<h2>DE LA MANO CONTIGO PODEMOS CREAR EL SITIO WEB IDEAL</h2>
-					<section>
-						<article>
-							<h3>Diseños enfocados en representarte</h3>
-							<p></p>
-						</article>
-						<article>
-							<h3>Diseños enfocados en representarte</h3>
-							<p></p>
-						</article>
-						<article>
-							<h3>Diseños enfocados en representarte</h3>
-							<p></p>
-						</article>
-					</section>
+				<section className={`${styles.website__presentation}`}>
+					<div className={`${styles.website__presentation_container}`}>
+						<h2 className={`${styles.website__presentation_title}`}>
+							GALOS CASA CREATIVA
+						</h2>
+						<p className={`${styles.website__presentation_p}`}>
+							La primera impresión es digital, tu sitio web es más que una página; es tu
+							carta de presentación, tu escaparate y tu mejor vendedor. En Galos Casa
+							Creativa, creamos espacios digitales únicos que no solo destacan, sino que
+							inspiran y conectan con tu público objetivo.
+						</p>
+					</div>
+					<img
+						src="/hand_coding.svg"
+						className={`${styles.website__presentation_img}`}
+						alt=""
+					/>
+				</section>
+				<section className={`${styles.website__contact}`}>
+					<img className={`${styles.website__contact_img}`} src="/puzzle.svg" alt="" />
+					<h2 className={`${styles.website__contact_title}`}>
+						CUENTANOS ACERCA DE TU PROXIMO PROYECTO
+					</h2>
+					<div className={`${styles.website__contact_btns}`}>
+						<a className={`${styles.website__contact_btn}`} href="#">
+							EMAIL
+						</a>
+						<a className={`${styles.website__contact_btn}`} href="#">
+							WHATSAPP
+						</a>
+					</div>
 				</section>
 			</main>
 		</>
