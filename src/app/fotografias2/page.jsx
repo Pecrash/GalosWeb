@@ -20,10 +20,10 @@ export default function Fotografias2(params) {
 	/* let imageWidth = imagesRoutes.eventos[valor].width; */
 	/* let offsetX = (window.innerWidth - imageWidth) / 2; */
 
-	const PhotoSet = ({ images, className }) => {
+	const PhotoSet = ({ images, className, title }) => {
 		return (
 			<>
-				<h2 className={`${styles.photoTitle}`}>TITLE</h2>
+				<h2 className={`${styles.photoTitle}`}>{title}</h2>
 				<div
 					ref={carousel}
 					className={`${styles.photoContainer__section} ${className} testCont`}
@@ -58,12 +58,19 @@ export default function Fotografias2(params) {
 		<>
 			<main className={styles.photoContainer} ref={container}>
 				<PhotoSet
-					images={imagesRoutes.eventos}
+					images={imagesRoutes.moda}
 					className={styles.photoContainer__section1}
+					title={"MODA"}
 				/>
 				<PhotoSet
-					images={imagesRoutes.moda}
+					images={imagesRoutes.retrato}
 					className={styles.photoContainer__section2}
+					title={"RETRATO"}
+				/>
+				<PhotoSet
+					images={imagesRoutes.productos}
+					className={styles.photoContainer__section3}
+					title={"PRODUCTOS"}
 				/>
 			</main>
 		</>

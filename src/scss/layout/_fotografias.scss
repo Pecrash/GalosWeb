@@ -15,7 +15,8 @@
 		font-size: 2.75em;
 		color: $goldenColor;
 		margin-top: 6rem;
-		padding-left: 1.875rem;
+		
+		text-align: center;
 	}
 
 	.photoContainer {
@@ -26,7 +27,7 @@
 		flex-direction: column;
 		background-color: $backgroundColor;
 		gap: 5px;
-		padding: 0 6px 6px 6px;
+		padding: 0 .375rem .375rem .375rem;
 
 		&__section {
 			margin-top: 30px;
@@ -37,12 +38,17 @@
 
 			&1 {
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(10, 148px);
+				grid-template-rows: repeat(15, 9.25rem);
 			}
 
 			&2 {
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(14, 148px);
+				grid-template-rows: repeat(13, 9.25rem);
+			}
+
+			&3 {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(12, 9.25rem);
 			}
 
 			:nth-child(1) {
@@ -79,30 +85,49 @@
 
 @include media-up(tablet) {
 	.photoContainer {
+		padding: 0 .475rem .375rem .475rem;
+
 		&__section {
 			&1 {
-				grid-template-rows: repeat(10, 148 * 1.7px);
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(10, 9.25rem);
 			}
 			&2 {
-				grid-template-rows: repeat(14, 148*1.7px);
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(9, 9.25rem);
+			}
+
+			&3 {
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(8, 9.25rem);
 			}
 		}
 	}
 }
 
 @include media-up(desktop) {
+	.photoTitle {
+		font-size: 4.75em;
+		margin-top: 10rem;
+	}
+
 	.photoContainer {
 		align-items: center;
 		&__section {
 			width: calc(100% - 20px);
+			margin-top: 4.875rem;
 
 			&1 {
-				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: repeat(7, 148*2.2px);
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(7, 9.25*1.4rem);
 			}
 			&2 {
-				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: repeat(10, 148*2.2px);
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(7, 9.25*1.4rem);
+			}
+			&3 {
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(6, 9.25*1.4rem);
 			}
 		}
 	}

@@ -51,7 +51,7 @@ export default function Website(params) {
 
 			let tl = gsap.timeline({
 				repeat: -1,
-				repeatDelay: 2,
+				repeatDelay: 14,
 				defaults: {
 					duration: 0.7,
 					ease: "power2.inOut",
@@ -59,9 +59,9 @@ export default function Website(params) {
 			});
 
 			tl.to(".value", { yPercent: -100, translateY: "-0.9375rem" })
-				.to(".value", { yPercent: -200, translateY: "-1.875rem" }, ">2")
-				.to(".value", { yPercent: -300, translateY: "-2.8125rem" }, ">2")
-				.to(".value", { yPercent: -400, translateY: "-3.75rem" }, ">2");
+				.to(".value", { yPercent: -200, translateY: "-1.875rem" }, ">14")
+				.to(".value", { yPercent: -300, translateY: "-2.8125rem" }, ">14")
+				.to(".value", { yPercent: -400, translateY: "-3.75rem" }, ">14");
 		},
 		{ scope: container }
 	);
@@ -92,25 +92,29 @@ export default function Website(params) {
 				<article className={`${styles.website__services_value} value`}>
 					<h3 className={`${styles.website__services_value_title}`}>DISEÑO UI&UX</h3>
 					<p className={`${styles.website__services_value_p}`}>
-						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
-						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
-						cualquier pantalla.
+						Diseñamos la cara de tu marca en el mundo digital. Creamos flujos simples,
+						lógicos y sin frustraciones, para que la experiencia sea tan memorable como
+						efectiva, donde cada botón, letra y color cuentan tu historia.
 					</p>
 				</article>
 				<article className={`${styles.website__services_value} value`}>
-					<h3 className={`${styles.website__services_value_title}`}>TITULO 3</h3>
+					<h3 className={`${styles.website__services_value_title}`}>
+						OPTIMIZACIÓN DE RENDIMIENTO
+					</h3>
 					<p className={`${styles.website__services_value_p}`}>
-						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
-						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
-						cualquier pantalla.
+						Un sitio rápido no solo mejora la experiencia del usuario, sino que también
+						impulsa tus resultados, la experiencia que ofreces a tus clientes debe ser
+						fluida y sin trabas para evitar perder oportunidades valiosas.
 					</p>
 				</article>
 				<article className={`${styles.website__services_value} value`}>
-					<h3 className={`${styles.website__services_value_title}`}>TITULO 4</h3>
+					<h3 className={`${styles.website__services_value_title}`}>
+						ACOMPAÑAMIENTO CONSTANTE
+					</h3>
 					<p className={`${styles.website__services_value_p}`}>
-						Garantizamos que cada usuario tendrá una experiencia perfecta, sin importar
-						dónde o cómo se conecte, creando experiencias que fluyen con naturalidad en
-						cualquier pantalla.
+						Sabemos que un sitio web puede ser un gran paso para tu negocio y por lo mismo
+						pueden surgir gran cantidad de dudas y obstáculos, estamos para acompañarte en
+						el paso a paso y asegurarnos de que todo vaya acorde a tus objetivos.
 					</p>
 				</article>
 			</>

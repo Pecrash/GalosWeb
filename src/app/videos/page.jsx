@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import styles from "@/scss/app.module.scss";
 import { gsap } from "gsap";
@@ -13,7 +13,7 @@ export default function Videos(params) {
 
 	const videoInfo = {
 		one: {
-			title: "Video uno",
+			title: "A NADIE LE COPIO - 'EL TIGRE DEL PUEBLO'",
 			description:
 				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
 			datos: {
@@ -23,7 +23,7 @@ export default function Videos(params) {
 		},
 
 		two: {
-			title: "Video dos",
+			title: "VESTIGIOS - ECOS",
 			description:
 				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
 			datos: {
@@ -33,7 +33,7 @@ export default function Videos(params) {
 		},
 
 		three: {
-			title: "Video tres",
+			title: "ET TALKS - EPISODE #1",
 			description:
 				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
 			datos: {
@@ -73,9 +73,9 @@ export default function Videos(params) {
 		},
 	};
 
-    const container = useRef();
-	const sections = useRef()
-	let clamp = useRef()
+	const container = useRef();
+	const sections = useRef();
+	let clamp = useRef();
 	let animating;
 
 	useGSAP(
@@ -120,20 +120,55 @@ export default function Videos(params) {
 		{ scope: container }
 	);
 
-	const VideoSection = ({ title, description, datos }) => {
+	const youtubeVideos = {
+		one: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/iy9tmxBvZGU?si=SezIh5-iu9WSjWsr"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+		),
+		two: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/rhAJf8ZHj_M?si=4-ZUM4I_o3nPECmJ"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+		),
+		three: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/W8-FFE6R-rM?si=JGM_ZxkxUs89R2Oc"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+		),
+	};
+
+	const VideoSection = ({ title, description, datos, video }) => {
 		return (
 			<section className={`${styles.videoSection} section`}>
 				<h2 className={`${styles.videoSection__title}`}>{title}</h2>
 				<p className={`${styles.videoSection__description}`}>{description}</p>
 				<ul className={`${styles.videoSection__list}`}>
-					<li className={`${styles.videoSection__list_item}`}>
-						{datos.one}
-					</li>
-					<li className={`${styles.videoSection__list_item}`}>
-						{datos.two}
-					</li>
+					<li className={`${styles.videoSection__list_item}`}>{datos.one}</li>
+					<li className={`${styles.videoSection__list_item}`}>{datos.two}</li>
 				</ul>
-				<div className={`${styles.videoSection__video}`}></div>
+				<div className={`${styles.videoSection__video}`}>{video}</div>
 			</section>
 		);
 	};
@@ -145,16 +180,19 @@ export default function Videos(params) {
 					title={videoInfo.one.title}
 					description={videoInfo.one.description}
 					datos={videoInfo.one.datos}
+					video={youtubeVideos.one}
 				/>
-                <VideoSection
+				<VideoSection
 					title={videoInfo.two.title}
 					description={videoInfo.two.description}
 					datos={videoInfo.two.datos}
+					video={youtubeVideos.two}
 				/>
-                <VideoSection
+				<VideoSection
 					title={videoInfo.three.title}
 					description={videoInfo.three.description}
 					datos={videoInfo.three.datos}
+					video={youtubeVideos.three}
 				/>
 			</main>
 		</>
