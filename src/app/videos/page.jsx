@@ -73,6 +73,45 @@ export default function Videos(params) {
 		},
 	};
 
+	const youtubeVideos = {
+		one: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/iy9tmxBvZGU?si=SezIh5-iu9WSjWsr"
+				title="YouTube video player"
+				allow="web-share"
+				referrerPolicy="strict-origin-when-cross-origin"
+				allowFullScreen
+				style={{border: "none"}}
+			></iframe>
+		),
+		two: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/rhAJf8ZHj_M?si=4-ZUM4I_o3nPECmJ"
+				title="YouTube video player"
+				allow="web-share"
+				referrerPolicy="strict-origin-when-cross-origin"
+				allowFullScreen
+				style={{border: "none"}}
+			></iframe>
+		),
+		three: (
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/W8-FFE6R-rM?si=JGM_ZxkxUs89R2Oc"
+				title="YouTube video player"
+				allow="web-share"
+				referrerPolicy="strict-origin-when-cross-origin"
+				allowFullScreen
+				style={{border: "none"}}
+			></iframe>
+		),
+	};
+
 	const container = useRef();
 	const sections = useRef();
 	let clamp = useRef();
@@ -98,13 +137,13 @@ export default function Videos(params) {
 				value === 1
 					? tl
 							.to(sections.current[index], { opacity: 1 })
-							.set(sections.current[index], { pointerEvents: "auto" })
+							.set(sections.current[index], { pointerEvents: "all" })
 					: tl
 							.to(sections.current[currentIndex], { opacity: currentIndex == 0 ? 1 : 0 })
 							.set(sections.current[currentIndex], { pointerEvents: "none" });
 
 				currentIndex = index;
-				console.log("Index: " + currentIndex);
+				console.log("Index: " + value);
 			};
 
 			const sectionsObserver = Observer.create({
@@ -119,45 +158,6 @@ export default function Videos(params) {
 		},
 		{ scope: container }
 	);
-
-	const youtubeVideos = {
-		one: (
-			<iframe
-				width="100%"
-				height="100%"
-				src="https://www.youtube.com/embed/iy9tmxBvZGU?si=SezIh5-iu9WSjWsr"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-		),
-		two: (
-			<iframe
-				width="100%"
-				height="100%"
-				src="https://www.youtube.com/embed/rhAJf8ZHj_M?si=4-ZUM4I_o3nPECmJ"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-		),
-		three: (
-			<iframe
-				width="100%"
-				height="100%"
-				src="https://www.youtube.com/embed/W8-FFE6R-rM?si=JGM_ZxkxUs89R2Oc"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
-		),
-	};
 
 	const VideoSection = ({ title, description, datos, video }) => {
 		return (

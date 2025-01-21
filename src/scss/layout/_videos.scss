@@ -18,6 +18,11 @@
 		left: 0;
 		background-color: $backgroundColor;
 		opacity: 0;
+		pointer-events: none;
+
+		&:nth-child(1) {
+			pointer-events: all;
+		}
 
 		&__title {
 			max-width: 90%;
@@ -53,7 +58,7 @@
 		&__video {
 			width: 85%;
 			height: 12.5rem;
-			background-color: gray;
+			background-color: transparent;
 			align-self: center;
 			order: 3;
 			margin-bottom: 1.575rem;
