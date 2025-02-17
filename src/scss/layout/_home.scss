@@ -109,16 +109,11 @@
 
 		&__item {
 			text-align: start;
-			/* width: 100%; */
 			position: relative;
 			flex: 1;
 			background-color: #353535;
 			overflow: hidden;
 			transition: all 0.5s ease;
-
-			/* &.active {
-				flex: 5;
-			} */
 
 			&:nth-child(2) {
 				background-color: #232323;
@@ -353,7 +348,7 @@
 				flex-direction: column;
 				align-items: flex-start;
 				position: absolute;
-				top: 10%;
+				top: 8%;
 				width: 73%;
 				height: 80%;
 				justify-content: space-between;
@@ -380,6 +375,7 @@
 				align-self: flex-start;
 				width: 14rem;
 				padding-left: 0;
+				margin-top: 0;
 			}
 		}
 	}

@@ -89,8 +89,8 @@ export const Header = () => {
 					</Link>
 				</ul>
 				<ul className={`${styles.menu__networks}`}>
-					<a href="#" className={`${styles.menu__networks_item}`}></a>
-					<a href="#" className={`${styles.menu__networks_item}`}></a>
+					<a href="https://www.facebook.com/share/1BC5eiKobq/" target="_blank" className={`${styles.menu__networks_item}`}></a>
+					<a href="https://www.instagram.com/galoscasacreativa?igsh=anZobHBwdnV1aXVt" target="_blank" className={`${styles.menu__networks_item}`}></a>
 					<a href="#" className={`${styles.menu__networks_item}`}></a>
 				</ul>
 			</div>

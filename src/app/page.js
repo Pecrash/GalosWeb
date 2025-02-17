@@ -10,6 +10,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/all";
 import Typed from "typed.js";
+import Link from "next/link";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin, Observer);
 
@@ -28,24 +29,28 @@ export default function Home() {
 			description:
 				"Lorem ipsum dolor sit amet consectetur. Massa cras egestas odio scelerisque. Volutpat et dictum eu amet sem est tortor. Ornare at turpis cursus fusce nulla est phasellus. Eget ullamcorper ac nulla a nam.",
 			id: 0,
+			href: "/fotografias2",
 		},
 		{
 			title: "VIDEOS",
 			description:
 				"Lorem ipsum dolor sit amet consectetur. Massa cras egestas odio scelerisque. Volutpat et dictum eu amet sem est tortor. Ornare at turpis cursus fusce nulla est phasellus. Eget ullamcorper ac nulla a nam.",
 			id: 1,
+			href: "/videos",
 		},
 		{
 			title: "DESARROLLO WEB",
 			description:
-				"Lorem ipsum dolor sit amet consectetur. Massa cras egestas odio scelerisque. Volutpat et dictum eu amet sem est tortor. Ornare at turpis cursus fusce nulla est phasellus. Eget ullamcorper ac nulla a nam.",
+				"Un sitio web es tu carta de presentación disponible las 24 horas, que permite a tus clientes encontrarte, conocer tus productos o servicios y contactarte fácilmente. Un sitio web profesional genera confianza, amplía tu alcance y te posiciona como una opción confiable en un mercado competitivo.",
 			id: 2,
+			href: "/website",
 		},
 		{
-			title: "DISEÑO",
+			title: "ACOMPAÑAMIENTO",
 			description:
-				"Lorem ipsum dolor sit amet consectetur. Massa cras egestas odio scelerisque. Volutpat et dictum eu amet sem est tortor. Ornare at turpis cursus fusce nulla est phasellus. Eget ullamcorper ac nulla a nam.",
+				"En Galos, creemos que acompañarte durante todo el proceso es esencial. Desde el primer contacto hasta la finalización del servicio, estaremos a tu lado, resolviendo tus dudas, escuchando tus necesidades y asegurándonos de que todo sea exactamente como lo imaginaste.",
 			id: 3,
+			href: "#",
 		},
 	];
 
@@ -229,7 +234,7 @@ export default function Home() {
 									<h2 className={styles.services__item_title}>{item.title}</h2>
 									<div className={`${styles.services__item_content} serviceContent`}>
 										<p className={styles.services__item_desc}>{item.description}</p>
-										<button className={styles.services__item_btn}></button>
+										<Link href={item.href} className={styles.services__item_btn}></Link>
 									</div>
 								</article>
 							);
