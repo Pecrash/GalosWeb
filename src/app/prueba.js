@@ -18,6 +18,7 @@ gsap.set(innerWrappers, { yPercent: -100 });
 
 function gotoSection(index, direction) {
 	index = wrap(index); // make sure it's valid
+	let varp = 0;
 	animating = true;
 	let fromTop = direction === -1,
 		dFactor = fromTop ? -1 : 1,

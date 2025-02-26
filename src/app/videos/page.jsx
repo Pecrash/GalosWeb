@@ -15,30 +15,32 @@ export default function Videos(params) {
 		one: {
 			title: "A NADIE LE COPIO - 'EL TIGRE DEL PUEBLO'",
 			description:
-				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
+				"Videoclip realizado para el artista de música popular Antony, el Tigre del Pueblo, destacando su inconfundible estilo y pasión por la música que conecta con el corazón de su gente.",
 			datos: {
-				one: "datos técnicos o información adicional del proyecto",
-				two: "datos técnicos o información adicional del proyecto",
+				one: "Producción",
+				two: "Grabación",
+				three: "Edición del video",
 			},
 		},
 
 		two: {
 			title: "VESTIGIOS - ECOS",
 			description:
-				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
+				"Tráiler del cortometraje realizado para la marca de ropa ECOS, en su drop Vestigios, una propuesta visual que explora la historia y el legado del ferrocarril de Antioquia a través de la moda y la narrativa audiovisual.",
 			datos: {
-				one: "datos técnicos o información adicional del proyecto",
-				two: "datos técnicos o información adicional del proyecto",
+				one: "Producción",
+				two: "Grabación",
+				three: "Edición del video",
 			},
 		},
 
 		three: {
 			title: "ET TALKS - EPISODE #1",
 			description:
-				"Lorem ipsum dolor sit amet consectetur. Vitae etiam tincidunt a feugiat facilisi est sit nisl in. Gravida aliquet tellus sed nibh euismod vitae dui. Libero sed amet ut quisque tortor adipiscing non. Etiam faucibus adipiscing et lobortis libero enim massa semper.",
+				"Video realizado para el Preuniversitario Formarte, en su programa English Training, destacando su metodología innovadora y el impacto en la formación de sus estudiantes.",
 			datos: {
-				one: "datos técnicos o información adicional del proyecto",
-				two: "datos técnicos o información adicional del proyecto",
+				one: "Grabación",
+				two: "Edición de video",
 			},
 		},
 
@@ -166,7 +168,8 @@ export default function Videos(params) {
 				<p className={`${styles.videoSection__description}`}>{description}</p>
 				<ul className={`${styles.videoSection__list}`}>
 					<li className={`${styles.videoSection__list_item}`}>{datos.one}</li>
-					<li className={`${styles.videoSection__list_item}`}>{datos.two}</li>
+					{datos.two ? <li className={`${styles.videoSection__list_item}`}>{datos.two}</li> : ""}
+					{datos.three ? <li className={`${styles.videoSection__list_item}`}>{datos.three}</li> : ""}
 				</ul>
 				<div className={`${styles.videoSection__video}`}>{video}</div>
 			</section>
