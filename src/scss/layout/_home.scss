@@ -122,6 +122,13 @@
 				background-color: #232323;
 			}
 
+			&:nth-child(2) &_btn {
+				color: #232323;
+			}
+			&:nth-child(4) &_btn {
+				color: #232323;
+			}
+
 			&_title {
 				margin-top: 0.4375rem;
 				text-align: center;
@@ -135,13 +142,17 @@
 			}
 
 			&_btn {
-				width: 2rem;
-				height: 2rem;
-				background-color: transparent;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #353535;
+				width: 4.6rem;
+				height: 1.6rem;
+				font-weight: 500;
+				border-radius: .3125rem;
 				border: none;
-				background-image: url("/plusIcon.svg");
-				background-position: center;
-				background-size: contain;
+				background-color: $subtitleColor;
+				text-decoration: none;
 				position: absolute;
 				left: 1.5625rem;
 				top: 14.375rem;
@@ -320,12 +331,12 @@
 		}
 
 		&__title {
-			margin-bottom: 1.5rem;
+			margin-bottom: 1rem;
 		}
 
 		&__p {
 			display: initial;
-			margin-top: 1.25rem;
+			margin-top: 1.2rem;
 			margin-left: 2.1875rem;
 			font-size: 1.16em;
 		}

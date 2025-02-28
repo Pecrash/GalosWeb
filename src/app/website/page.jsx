@@ -173,10 +173,10 @@ export default function Website(params) {
 						CUENTANOS ACERCA DE TU PROXIMO PROYECTO
 					</h2>
 					<div className={`${styles.website__contact_btns}`}>
-						<a className={`${styles.website__contact_btn}`} href="#">
+						<a className={`${styles.website__contact_btn}`} href="mailto:galoscasacreativa@gmail.com">
 							EMAIL
 						</a>
-						<a className={`${styles.website__contact_btn}`} href="#">
+						<a className={`${styles.website__contact_btn}`} target="_blank" href="https://wa.link/01ort0">
 							WHATSAPP
 						</a>
 					</div>

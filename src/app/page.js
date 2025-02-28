@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "../scss/app.module.scss";
 import { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-web";
@@ -76,7 +75,7 @@ export default function Home() {
     const typed = new Typed(type.current, {
       strings: [
         "Haz que más personas descubran lo que haces.^2000",
-        "Tu contenido, pero con un toque profesional.^2000",
+        "Tu contenido, pero profesional.^2000",
         "Hacemos que tu marca se vea y se sienta increíble.^2000",
         "Porque tu negocio merece ser visto y recordado.^2000",
         "No es solo marketing, es hacer crecer tu sueño.^2000",
@@ -229,7 +228,7 @@ export default function Home() {
               alta calidad visual, sino que funcionan a la perfección. Desde la
               idea inicial hasta el lanzamiento, te acompañamos en cada etapa
               para crear una presencia digital que refleje tu esencia y conecte
-              con tu audiencia. a nam.
+              con tu audiencia.
             </p>
           </div>
           <div className={styles.services__gallery}>
@@ -250,7 +249,9 @@ export default function Home() {
                     <Link
                       href={item.href}
                       className={styles.services__item_btn}
-                    ></Link>
+                    >
+                      Ver más
+                    </Link>
                   </div>
                 </article>
               );
